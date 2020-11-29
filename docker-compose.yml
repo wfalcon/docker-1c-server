@@ -8,3 +8,6 @@ services:
      - /etc/localtime:/etc/localtime:ro
     network_mode: host
     container_name: 1c-server
+volumes:
+  1c-server-home:
+  1c-server-logs:
