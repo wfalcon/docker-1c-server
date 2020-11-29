@@ -7,7 +7,7 @@ RUN apt-get -qq update \
   && apt-get -qq install --yes --no-install-recommends fontconfig imagemagick \
   && `#----- Deal with ttf-mscorefonts-installer -----` \
   && apt-get -qq install --yes --no-install-recommends xfonts-utils cabextract \
-  && wget --quiet --output-document /tmp/ttf-mscorefonts-installer_3.8_all.deb http://ftp.us.debian.org/debian/pool/contrib/m/msttcorefonts/ttf-mscorefonts-installer_3.6_all.deb \
+  && wget --quiet --output-document /tmp/ttf-mscorefonts-installer_3.8_all.deb http://ftp.us.debian.org/debian/pool/contrib/m/msttcorefonts/ttf-mscorefonts-installer_3.8_all.deb \
   && dpkg --install /tmp/ttf-mscorefonts-installer_3.8_all.deb 2> /dev/null \
   && rm /tmp/ttf-mscorefonts-installer_3.8_all.deb \
   && `#----- Install gosu -----` \
