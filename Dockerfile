@@ -21,7 +21,7 @@ ENV LANG ru_RU.utf8
 ADD *.deb /tmp/
 
 ENV PLATFORM_VERSION 83
-ENV SERVER_VERSION 8.3.10-2639
+ENV SERVER_VERSION 8.3.17-1549
 RUN dpkg --install /tmp/1c-enterprise$PLATFORM_VERSION-common_${SERVER_VERSION}_amd64.deb 2> /dev/null \
   && dpkg --install /tmp/1c-enterprise$PLATFORM_VERSION-server_${SERVER_VERSION}_amd64.deb 2> /dev/null \
   && rm /tmp/*.deb \
