@@ -1,0 +1,10 @@
+version: '3.2'
+services:
+  1c-server:
+    image: falcondocker/1c-server:1c-server_8.3.17-1549
+    volumes:
+     - 1c-server-home:/home/usr1cv8
+     - 1c-server-logs:/var/log/1C
+     - /etc/localtime:/etc/localtime:ro
+    network_mode: host
+    container_name: 1c-server
